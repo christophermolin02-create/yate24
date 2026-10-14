@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0A0F1D" />
+  <title>Meridian 62 — Own the Horizon</title>
+  <meta name="description" content="Hand-finished naval architecture with twin-engine performance. Private sea trial, turnkey delivery, and a 5-year full warranty." />
+
+  <!-- Hoja de estilos principal -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Optimización LCP: precarga la foto principal del yate -->
+  <link rel="preload" as="image" href="assets/images/yacht-hero.jpg" fetchpriority="high" />
+</head>
+<body>
+
+  <div class="device">
+
+    <!-- ============================================================
+         1) BARRA DE ESTADO (antes: anuncio de descuento)
+         ============================================================ -->
+    <section class="announce" id="announce" aria-label="Product status">
+      <div class="announce__inner">
+        <p class="announce__text">
+          <span class="announce__dot" aria-hidden="true"></span>
+          2026 Edition <span class="announce__sep" aria-hidden="true">•</span>
+          Next Build Slots Open — Reserve Yours
+        </p>
+        <button class="announce__close" type="button" aria-label="Dismiss message" data-dismiss="announce">
+          <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" fill="none"
+               stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <path d="M2.5 2.5 11.5 11.5M11.5 2.5 2.5 11.5" />
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         2) BARRA DE NAVEGACIÓN
+         ============================================================ -->
+    <header class="nav">
+      <nav class="nav__inner" aria-label="Primary">
+        <button class="icon-btn" type="button" aria-label="Open menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none"
+               stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <path d="M3 7h18M3 12h18M3 17h18" />
+          </svg>
+        </button>
+
+        <span class="nav__logo" aria-label="Meridian Yachts">
+          <b>MERIDIAN</b><i aria-hidden="true"></i><span>YACHTS</span>
+        </span>
+
+        <div class="nav__right">
+          <button class="icon-btn" type="button" aria-label="Saved models">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none"
+                 stroke="currentColor" stroke-width="1.5" stroke-linejoin="round">
+              <path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9Z" />
+            </svg>
+          </button>
+          <a class="nav__order" href="#reserve">Order</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+
+        <div class="hero__intro">
+        <!-- 3) SELLO DE AUTORIDAD -->
+        <div class="trust">
+          <span class="trust__icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 12h3l2-6 3 14 3-11 2 3h7" />
+            </svg>
+          </span>
+          <span class="trust__copy">Naval-Engineered Performance • Loved by 1,000+ Owners &amp; Captains</span>
+        </div>
+
+        <!-- 4) TITULAR Y PROPUESTA DE VALOR -->
+        <div class="headline">
+          <h1 id="hero-title">Own the <em>Horizon.</em></h1>
+          <p class="subhead">
+            Hand-finished naval architecture with twin-engine performance. Built for
+            open water, effortless entertaining, and weekends that never end.
+          </p>
+        </div>
+        </div>
+
+        <div class="hero__visual">
+        <!-- 5) VISUAL DEL PRODUCTO + BADGE TÉCNICO -->
+        <figure class="media">
+          <figcaption class="sr-only">Meridian 62 Sport Yacht on open water</figcaption>
+
+          <!-- Galería: dos capas apiladas para el fundido (crossfade) suave -->
+          <img class="media__layer is-visible" data-fallback data-gallery-layer
+               src="assets/images/yacht-hero.jpg"
+               alt="Meridian 62 Sport Yacht cruising on open water"
+               width="479" height="359"
+               loading="eager" fetchpriority="high" decoding="async" />
+          <img class="media__layer" data-gallery-layer aria-hidden="true" alt=""
+               width="479" height="359" decoding="async" />
+
+          <!-- Respaldo vectorial: se ve solo si falta la foto -->
+          <div class="media__placeholder" aria-hidden="true">
+            <svg viewBox="0 0 800 560" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+              <defs>
+                <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#0A0F1D" />
+                  <stop offset="0.62" stop-color="#10203A" />
+                  <stop offset="1" stop-color="#15375C" />
+                </linearGradient>
+                <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#0D2A47" />
+                  <stop offset="1" stop-color="#070B14" />
+                </linearGradient>
+                <linearGradient id="hull" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#1E4E7A" />
+                  <stop offset="1" stop-color="#0B1E30" />
+                </linearGradient>
+                <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+                  <stop offset="0" stop-color="#00F2FE" stop-opacity="0.55" />
+                  <stop offset="1" stop-color="#00F2FE" stop-opacity="0" />
+                </radialGradient>
+              </defs>
+
+              <rect width="800" height="420" fill="url(#sky)" />
+              <rect y="420" width="800" height="140" fill="url(#sea)" />
+              <circle cx="400" cy="420" r="230" fill="url(#sun)" />
+
+              <!-- horizonte -->
+              <path d="M0 420 H800" stroke="#4FACFE" stroke-opacity="0.32" stroke-width="1.4" />
+
+              <!-- casco -->
+              <path d="M214 362 Q400 344 583 366 C566 406 500 430 400 430 C300 430 228 402 214 362 Z"
+                    fill="url(#hull)" stroke="#4FACFE" stroke-opacity="0.7" stroke-width="2.2" />
+              <!-- línea de cubierta -->
+              <path d="M214 362 Q400 344 583 366" fill="none" stroke="#CFE9FB" stroke-opacity="0.85" stroke-width="2.4" />
+
+              <!-- superestructura -->
+              <path d="M305 360 L321 306 Q326 299 336 299 L494 299 Q504 299 511 308 L528 360 Z"
+                    fill="#102942" stroke="#4FACFE" stroke-opacity="0.75" stroke-width="2.2" />
+              <!-- ventanas -->
+              <path d="M332 306 L318 356 M500 306 L520 356" stroke="#4FACFE" stroke-opacity="0.6" stroke-width="1.6" />
+              <path d="M345 316 H485" stroke="#4FACFE" stroke-opacity="0.45" stroke-width="1.4" />
+
+              <!-- mástil y radar -->
+              <path d="M415 299 V255" stroke="#4FACFE" stroke-opacity="0.7" stroke-width="1.8" />
+              <path d="M398 255 H432" stroke="#CFE9FB" stroke-opacity="0.8" stroke-width="2.2" stroke-linecap="round" />
+
+              <!-- luces de navegación -->
+              <circle cx="222" cy="360" r="2.6" fill="#00F2FE" />
+              <circle cx="577" cy="364" r="2.6" fill="#4FACFE" />
+
+              <!-- reflejos en el agua -->
+              <g stroke="#4FACFE" stroke-opacity="0.26" stroke-linecap="round">
+                <path d="M250 452 H550" stroke-width="2" />
+                <path d="M300 474 H500" stroke-width="2" />
+                <path d="M330 498 H470" stroke-width="1.8" />
+                <path d="M360 524 H440" stroke-width="1.6" />
+              </g>
+            </svg>
+          </div>
+
+          <!-- Glow overlay + badge técnico (antes: sticker de descuento) -->
+          <div class="media__badge">
+            <span class="media__badge-dot" aria-hidden="true"></span>
+            Hydro-Glide Hull™ Tech
+          </div>
+        </figure>
+
+        <!-- Miniaturas: cambian la foto principal (crossfade) -->
+        <div class="gallery" role="group" aria-label="Yacht views">
+          <button class="gallery__thumb is-active" type="button" aria-pressed="true"
+                  data-gallery-thumb
+                  data-src="assets/images/yacht-hero.jpg"
+                  data-alt="Meridian 62 Sport Yacht cruising on open water"
+                  aria-label="View 1: cruising on open water">
+            <img src="assets/images/yacht-hero.jpg" alt="" width="479" height="359"
+                 loading="lazy" decoding="async" />
+          </button>
+          <button class="gallery__thumb" type="button" aria-pressed="false"
+                  data-gallery-thumb
+                  data-src="assets/images/yacht-view-2.jpg"
+                  data-alt="Meridian 62 Sport Yacht deck detail"
+                  aria-label="View 2: deck detail">
+            <img src="assets/images/yacht-view-2.jpg" alt="" width="507" height="338"
+                 loading="lazy" decoding="async" />
+          </button>
+          <button class="gallery__thumb" type="button" aria-pressed="false"
+                  data-gallery-thumb
+                  data-src="assets/images/yacht-view-3.jpg"
+                  data-alt="Meridian 62 Sport Yacht in the harbour"
+                  aria-label="View 3: in the harbour">
+            <img src="assets/images/yacht-view-3.jpg" alt="" width="505" height="340"
+                 loading="lazy" decoding="async" />
+          </button>
+        </div>
+        </div>
+
+        <div class="hero__buy">
+        <!-- 6) PRECIO Y EXCLUSIVIDAD -->
+        <div class="pricing">
+          <div class="pricing__row">
+            <span class="price__now">€2,205,000</span>
+            <s class="price__was">€2,450,000</s>
+          </div>
+          <p class="price__label">Pre-Order Price • 2026 Edition</p>
+          <p class="pricing__note">
+            Includes Private Sea Trial &amp; 5-Year Full Hardware Warranty
+          </p>
+          <p class="urgency">
+            <span class="urgency__dot" aria-hidden="true"></span>
+            Limited Build Slots — 2026 Allocation
+          </p>
+        </div>
+
+        <!-- 7) ÁREA DE CTA -->
+        <div class="cta" id="reserve">
+          <a class="btn btn--primary" href="#reserve">
+            Reserve Your Meridian
+          </a>
+
+          <ul class="microcopy">
+            <li>
+              <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" fill="none"
+                   stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 6.2 4.7 9 10 3.2" />
+              </svg>
+              Private Sea Trial
+            </li>
+            <li>
+              <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" fill="none"
+                   stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 6.2 4.7 9 10 3.2" />
+              </svg>
+              Complimentary Delivery &amp; Commissioning
+            </li>
+            <li>
+              <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" fill="none"
+                   stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 6.2 4.7 9 10 3.2" />
+              </svg>
+              5-Year Hull Warranty
+            </li>
+          </ul>
+
+          <a class="btn btn--outline" href="#technology">Explore the Technology</a>
+        </div>
+        </div>
+
+      </section>
+    </main>
+  </div>
+
+  <!-- Script principal (al final, sin bloquear el render) -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>

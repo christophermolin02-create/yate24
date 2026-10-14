@@ -1,0 +1,15 @@
+# Normaliza los finales de línea en el repo (evita diffs falsos entre Windows/mac/Linux)
+* text=auto
+
+# Imágenes: nunca tratar como texto
+*.jpg  binary
+*.jpeg binary
+*.png  binary
+*.webp binary
+*.avif binary
+*.gif  binary
+*.ico  binary
+
+# Fuentes
+*.woff  binary
+*.woff2 binary
